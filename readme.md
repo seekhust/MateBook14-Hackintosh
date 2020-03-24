@@ -105,9 +105,19 @@ killall Finder         # 重启启动Finder
 ![img](/HiDPI/03.png)
 ![img](/HiDPI/04.png)
 
+### 声卡驱动
+Clover layout id
+注意华为matebook14的声卡ID可以填写13，在clover里面注入。
+检查内核文件kexts\other下是否有AppleALC和lilu驱动
+
 ### 声卡切换底噪，睡眠唤醒有噪音解决
 给声卡打ALCPlugFix 修复耳机切换底噪问题
 ![img](/ALC256_ALCPlugFix/01.png)
+
+### 使用外置USB WIFI
+用的是CF-811ACusb无线网卡
+github搜索wireless usb adapter clover 安装最新版本，然后检查内核文件kexts\other下是否有RtWlan1827和RtWlanU两个文件
+
 
 ### 更改USB WIFI图标及汉化
 效果
